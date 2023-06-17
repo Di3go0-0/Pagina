@@ -1,0 +1,359 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+main {
+display: flex;
+gap: 30px;
+margin-bottom: 80px;
+}
+
+
+nav .logo {
+  min-width: 250px;
+  width: 10%;
+}
+
+.heading-1 {
+text-align: center;
+font-weight: 800;
+font-size: 3rem;
+  color:rgb(5, 86, 139);
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/* ********************************** */
+/*               HEADER               */
+/* ********************************** */
+.container {
+max-width: 90rem;
+margin: 0 auto;
+}
+
+
+.hero {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.desktop .container-hero {
+background-color: rgb(5, 86, 139);
+  color: white;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+nav .mobile {
+display: none;
+}
+
+
+
+.desktop .container-logo {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.desktop .container-logo i {
+font-size: 3rem;
+}
+
+.desktop .container-logo h1 a {
+text-decoration: none;
+color: #000;
+font-size: 3rem;
+text-transform: uppercase;
+letter-spacing: -1px;
+}
+
+.desktop .container-user {
+display: flex;
+gap: 1rem;
+cursor: pointer;
+}
+
+.desktop .container-user .fa-user {
+font-size: 3rem;
+padding-right: 2.5rem;
+border-right: 1px solid #e2e2e2;
+}
+
+.desktop .container-user .fa-basket-shopping {
+font-size: 3rem;
+padding-left: 1rem;
+}
+
+.desktop .content-shopping-cart {
+display: flex;
+flex-direction: column;
+}
+
+
+
+
+@media screen and (max-width: 894px) {
+  nav .logo {
+    min-width: 150px;
+}
+
+
+nav .container-user{
+min-width: 150px;
+}
+}
+
+  
+
+
+@media screen and (max-width: 390px) {
+
+nav .desktop {
+  display: none;
+  }
+
+  nav .mobile {
+  display: block;
+  align-items: center;
+  }
+
+  nav .logo {
+  min-width: 250px;
+  }
+
+
+
+  nav .mobile .container-hero {
+  background-color: rgb(5, 86, 139);
+  color: white;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 6%;
+}
+
+
+nav .mobile .container-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+
+
+nav .mobile .container-logo h1 a {
+  text-decoration: none;
+  color: #000;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+nav .mobile .container-user {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+nav .mobile .container-user .fa-user {
+  font-size: 3rem;
+  color: var(--primary-color);
+  padding-right: 2.5rem;
+  border-right: 1px solid #e2e2e2;
+}
+
+nav .mobile .container-user .fa-basket-shopping {
+  font-size: 3rem;
+  color: var(--primary-color);
+  padding-left: 1rem;
+}
+
+nav .mobile .content-shopping-cart {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+}
+
+body .cuerpo {
+    padding: 0;
+    margin: 0;
+    margin-top: 3% auto;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+  
+    height: 100vh;
+  }
+
+.form-container {
+    background-color: white;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 60%;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-container .login-container {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .form-container .login-container > h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .form-container .login-container > p,
+  .form-container .login-container span {
+    color: #555;
+    text-align: center;
+  }
+  
+  .form-container .login-container label {
+    display: block;
+    font-weight: bold;
+    padding: 2px 0;
+  }
+  
+  .form-container .login-container input.input {
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    border: solid 1px #ccc;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .form-container .login-container input.input:focus {
+    outline: solid 1px rgb(5, 86, 139);
+  }
+  .form-container .login-container .providers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .form-container .login-container button.btn,
+  .form-container .login-container input.btn {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .form-container .login-container input.btn.btn-login {
+    background-color: black;
+    color: white;
+  }
+  .form-container .login-container button.btn.facebook-provider {
+    background-color: rgb(5, 86, 139);
+    color: white;
+    border: 0;
+  }
+  .form-container .login-container input.btn.btn-login:hover {
+    background-color: rgb(5, 86, 139);
+    color: white;
+  }
+  
+  .form-container .login-container button.btn.facebook-provider:hover {
+    background-color: rgb(5, 86, 139);
+    color: white;
+  }
+  
+  .form-container .login-container .options {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media screen and (max-width: 1320px) {
+    .form-container {
+      width: 25%;
+    }
+    .form-container .login-container {
+      width: 90%;
+  		align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }
+
+	@media screen and (max-width: 1080px) {
+    .form-container {
+      width: 30%;
+    }
+    .form-container .login-container {
+      width: 90%;
+  		align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+		
+  }
+
+	@media screen and (max-width: 850px) {
+    .form-container {
+      width: 40%;
+    }
+    .form-container .login-container {
+      width: 90%;
+  		align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+		
+  }
+
+	@media screen and (max-width: 620px) {
+    .form-container {
+      width: 60%;
+    }
+    .form-container .login-container {
+      width: 90%;
+  		align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+		
+  }
+
+	@media screen and (max-width: 550px) {
+    .form-container {
+      width: 70%;
+    }
+    .form-container .login-container {
+      width: 90%;
+  		align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+		
+  }

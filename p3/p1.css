@@ -1,0 +1,208 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(5, 86, 139);
+
+  height: 100vh;
+}
+.mobile{
+  display: none;
+}
+.form-container {
+  background-color: white;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 90vh;
+
+  display: flex;
+  align-items: center;
+  border: 2%;
+}
+
+.form-container .login-container {
+  width: 40%;
+  background-color: white;
+  margin: 0 auto;
+}
+.form-container .login-container > p {
+  text-align: left;
+  font-size: 2rem;
+}
+
+.form-container .info {
+  background-color: #eee;
+  height: 100%;
+  width: 100%;
+}
+
+.form-container .info {
+  width: 40%;
+  margin: 0 auto;
+}
+.form-container .info > h2 {
+  text-align: center;
+  margin-top: 30%;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.form-container .info > h3{
+  color: #000000;
+  font-size: medium;
+  margin-top: 30%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.form-container .info input.input:focus {
+  outline: solid 1px rgb(0, 153, 255);
+}
+
+.form-container .info button.btn,
+.form-container .info input.btn {
+  border: none;
+  padding: 15px 0;
+  width: 100%;
+  margin-top: 30%;
+  font-weight: bolder;
+  align-items: center;
+  display: block;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form-container .info input.btn.btn-login {
+  background-color: green;
+  color: white;
+}
+.form-container .info input.btn.btn-login:hover {
+  background-color: rgb(103, 163, 202);
+  color: white;
+}
+.td button.btn,
+.td  input.btn {
+  border: none;
+  padding: 15px 0;
+  width: 100%;
+  margin-top: 20%;
+  font-weight: bolder;
+  align-items: center;
+  display: block;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.td input.btn.btn-login {
+  background-color: green;
+  color: white;
+}
+.td input.btn.btn-login:hover {
+  background-color: rgb(103, 163, 202);
+  color: white;
+}
+img{
+  width: 60%;
+}
+
+@media screen and (max-width: 1320px) {
+  .form-container {
+    width: 80%;
+  }
+  
+}
+
+@media screen and (max-width: 800px) {
+  .form-container {
+    width: 90%;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .form-container .login-container {
+      width: 50%;
+    }
+  
+    .form-container .info {
+      width: 50%;
+    }
+    .form-container{
+      display: none;
+    }
+    .mobile{
+      background-color: white;
+      width: 80%;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+       overflow: hidden;
+      height: 90vh;
+      display: flex;
+    }
+    .td > p {
+      text-align: left;
+      font-size: 1.5rem;
+      }
+      
+    .td > h2 {
+      text-align: center;
+      margin-top: 10%;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+    
+    .td > h3{
+      color: #000000;
+      margin-top: 10%;
+      text-align: center;
+    }
+    img{
+      width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.productos{
+  margin: 5%auto;
+  object-fit: cover;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 50px auto 20px auto;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+
+ /* .productos
+ {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 50px auto 20px auto;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+ } */
+  

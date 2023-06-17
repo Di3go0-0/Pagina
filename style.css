@@ -14,7 +14,7 @@ main {
 nav .logo {
     min-width: 250px;
     width: 10%;
-  }
+}
 
 .heading-1 {
 	text-align: center;
@@ -95,6 +95,8 @@ nav .mobile {
 	text-transform: uppercase;
 	letter-spacing: -1px;
 }
+
+
 
 .desktop .container-user {
 	display: flex;
@@ -332,4 +334,13 @@ nav .mobile {
 	margin-left: 0.5rem;
 }
 
-  
+header{
+	position: sticky;
+	top: 0;
+}
+.pie{
+	text-align: center;
+	font-weight: 800;
+	font-size: 3rem;
+    color:  rgb(5, 86, 139);
+}
